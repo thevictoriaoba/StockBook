@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    /> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="swiper-bundle.min.css">
@@ -16,12 +21,19 @@
 
             <!--nav-->
             <div class="nav">
+
+                
                 <!--Logo-->
                 <div class="logo">
                     <a href="#"><img src="./Images/StockBook logo.svg" alt=""></a>
                 </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
 
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                    <div class="links-ul">
                     <ul>
                         <li><a href="#">Products</a></li>
@@ -42,7 +54,7 @@
                    </div>
 -->
 
-                  <a class="button" href="#" id="openOuterPopup">
+                  <a class="button" href="#" id="open-popup">
                    Start for free <img src="./Images/Vector.svg" alt="">
                   </a>
 
@@ -50,9 +62,9 @@
                  
 
                   <!-- Outer Popup -->
-                  <div id="outerPopup" class="popup">
+                  <div id="main-popup" class="popup">
                       <div class="popup-content">
-                          <span class="close-btn" id="closeOuterPopup">&times;</span>
+                          <span class="close-btn" id="close-main-popup">&times;</span>
                           <div class="genz">
 
                             <div class="buz">
@@ -65,11 +77,11 @@
                     
                                 <form action="/action_page.php">
                                     <label for="fname">Business Name </label><br><br>
-                                    <input type="text" id="lname" name="fname" value="Enter your business name" placeholder="Enter your business name"><br><br>
+                                    <input type="text" id="lname" name="business name" value="Enter your business name" placeholder="Enter your business name"><br><br>
                                     <label for="lname">Email Address</label><br><br>
-                                    <input type="text" id="lname" name="lname" value="Enter your email address" placeholder="Enter your email address"><br><br>
+                                    <input type="text" id="lname" name="email" value="Enter your email address" placeholder="Enter your email address"><br><br>
                                     <label for="lname">Password</label><br><br>
-                                    <input type="password" id="lname" name="lname" value="" placeholder="Enter your password"><br><br>
+                                    <input type="password" id="lname" name="password" value="" placeholder="Enter your password"><br><br>
                                     
                                   </form> 
                             </div>
@@ -95,7 +107,7 @@
                             </div>
                     
                             <form action="#" class="nexxtt">
-                                <input type="button" value="next" class="nexxt" id="openInnerPopup">
+                                <input type="button" value="next" class="nexxt" id="open-nested-popup">
                             </form>
                     
                             <div class="here">
@@ -109,9 +121,9 @@
 
               
                           <!-- Inner Popup -->
-                          <div id="innerPopup" class="popup">
+                          <div id="nested-popup" class="popup">
                               <div class="popup-content">
-                                  <span class="close-btn" id="closeInnerPopup">&times;</span>
+                                  <span class="close-btn" id="close-nested-popup">&times;</span>
                                   <div class="genzz">
 
                                     <div class="buz">
@@ -127,15 +139,15 @@
                                             <input type="text" id="lname" name="fname" value="Enter your business name" placeholder="Enter your full name"><br><br>
                                             <label for="lname">Mobile number</label><br><br>
                                             <div class="post">
-                                                <select name="cars" id="uk" >
+                                                <select name="location" id="uk" >
                                                     <option value="Select Position">Uk</option>
                                                     <option value="Select Position">uk</option>
                                                     <option value="Select Position">uk</option>
                                                     <option value="Select Position">uk</option>
                                                   </select>
-                                                <input type="number"  name="lname" value="Enter your email address" class="lname" placeholder="Enter your phone number"><br><br>
+                                                <input type="text"  name="email" value="Enter your email address" class="lname" placeholder="Enter your phone number"><br><br>
                                             </div><br>
-                                            <label for="lname">Position</label><br><br>
+                                            <label for="position">Position</label><br><br>
                                             <select name="cars" id="position" >
                                                 <option value="Select Position">Select Position</option>
                                                 <option value="Select Position">Select Position</option>
@@ -165,7 +177,7 @@
 
                           <div id="innerPopup" class="popup">
                             <div class="popup-content">
-                                <span class="close-btn" id="closeInnerPopup">&times;</span>
+                                <span class="close-btn" id="close-nested-popup-from-button">&times;</span>
                                 <h2>Inner Popup</h2>
                             </div>
                         </div>
@@ -174,6 +186,8 @@
 
                  
                         </div>
+
+                        
                     </div>
                 
 
@@ -216,57 +230,59 @@
                 <!--dash-sec1-->
                 <div class="sec-dash">
 
-                    <div class="dash-sec1">
+                    <div class="dash-sec1 sidebar">
 
                         <div class="dashboard-logo">
                             <a href="#"><img src="./Images/StockBook logo.svg" alt=""></a>
                         </div>
+
+                       
                      
                         <!--dash-links-->
-                        <div class="dash-1" id="dash-1">
-                            <a href="#"><img src="./Images/dashboard-circle-settings.svg" alt=""></a>
+                        <div class="dash-1 nav-link" id="dash-1">
+                            <a href="#"><img src="./Images/dashboard-circle-settings.svg" alt=""class="icons"></a>
                             <ul>
                                 <li><a href="#">Dashboard</a></li>
                             </ul>
                         </div>
-                        <div class="dash-1">
+                        <div class="dash-1 nav-link">
 
-                            <a href="#"><img src="./Images/store-02.svg" alt=""></a>
+                            <a href="#"><img src="./Images/store-02.svg" alt=""class="icons"></a>
 
                             <ul>
                                 <li><a href="#">Sales</a></li>
                             </ul>
                         </div>
-                        <div class="dash-1">
-                            <a href="#"><img src="./Images/file-management.svg" alt=""></a>
+                        <div class="dash-1 nav-link">
+                            <a href="#"><img src="./Images/file-management.svg" alt=""class="icons"></a>
                             <ul>
                                 <li><a href="#">Inventory</a></li>
                             </ul>
                             
                         </div>
-                        <div class="dash-1">
-                            <a href="#"><img src="./Images/invoice-04.svg" alt=""></a>
+                        <div class="dash-1 nav-link">
+                            <a href="#"><img src="./Images/invoice-04.svg" alt=""class="icons"></a>
                             <ul>
                                 <li><a href="#">Invoice</a></li>
                             </ul>
                             
                         </div>
-                        <div class="dash-1">
-                            <a href="#"><img src="./Images/waterfall-down-01.svg" alt=""></a>
+                        <div class="dash-1 nav-link">
+                            <a href="#"><img src="./Images/waterfall-down-01.svg" alt=""class="icons"></a>
                             <ul>
                                 <li><a href="#">Reports</a></li>
                             </ul>
                            
                         </div>
-                        <div class="dash-1">
-                            <a href="#"><img src="./Images/invoice-02.svg" alt=""></a>
+                        <div class="dash-1 nav-link">
+                            <a href="#"><img src="./Images/invoice-02.svg" alt="" class="icons"></a>
                             <ul>
                                 <li><a href="#">payments</a></li>
                             </ul>
                             
                         </div>
-                        <div class="dash-1">
-                            <a href="#"><img src="./Images/task-edit-02.svg" alt=""></a>
+                        <div class="dash-1 nav-link">
+                            <a href="#"><img src="./Images/task-edit-02.svg" alt="" class="icons"></a>
                             <ul>
                                 <li><a href="#">Manage Store</a></li>
                             </ul>
@@ -286,12 +302,12 @@
     
                            <div class="frs">
                             <div class="dash-noti">
-                                <a href="#"><img src="./Images/Notificaton.svg" alt=""></a>
+                                <a href="#"><img src="./Images/Notificaton.svg" alt="" class="dn"></a>
                             </div>
     
                             <div class="paul-logo">
                                 <div class="pl">
-                                    <a href="#"><img src="./Images/Paul Feng Logo.svg" alt=""></a>
+                                    <a href="#"><img src="./Images/Paul Feng Logo.svg" alt="" class="dl"></a>
                                 </div>
     
                                 <div class="paulfeng">
@@ -413,7 +429,7 @@
                                 </div>
                                 <div class="over-icon">
                                     <div class="icon-">
-                                        <img src="./Images/ic-trending-up-24px.svg" alt="">
+                                        <img src="./Images/ic-trending-up-24px.svg" alt="" >
                                     </div>
                                     <div class="over-icon-p">
                                         <p><span>8.5%</span> Up from yesterday</p>
@@ -448,10 +464,10 @@
                                            
                                             <select id="filter" name="2023">
                                                 <option value="apple">2023</option>
-                                                <option value="banana">Banana</option>
-                                                <option value="cherry">Cherry</option>
-                                                <option value="date">Date</option>
-                                                <option value="elderberry">Elderberry</option>
+                                                <option value="banana">Ban</option>
+                                                <option value="cherry">Che</option>
+                                                <option value="date">Dat</option>
+                                                <option value="elderberry">Eld</option>
                                             </select>
                                             
                                         </form>
@@ -491,14 +507,14 @@
                                     <h1>Sales Summary</h1>
                                     <p>2017-2018</p>
                                    </div>
-                                   <img src="./Images/Month.png" alt="">
+                                   <img src="./Images/Month.png" alt="" class="imz">
                                 </div>
 
                                 <div class="sum">
                                     <div class="sal">
                                      <h1>Sales Figures</h1>
                                     </div>
-                                    <img src="./Images/Sales Figures.png" alt="">
+                                    <img src="./Images/Sales Figures.png" alt="" class="imz">
                                  </div>
                             </div>
 
@@ -526,7 +542,7 @@
 
                                 <div class="p-three">
                                     <p class="ptt1">Charger</p>
-                                    <p class="pt1">N4,500</p>
+                                    <p class="pt1">N4,500 </p>
                                     <p class="pt2">N3,500</p>
                                     <p class="pt3">N300</p>
                                 </div>
@@ -553,6 +569,17 @@
 
 
                     <div class="nnayi">
+
+
+                        <div class="multiples-mali">
+                            <div class="mul-h1">
+                                <h1>Or multiple stores/ Branches</h1>
+                            </div>
+
+                            <div class="mul-p">
+                                <p>Envisioning a realm where the alchemy of <br>thought transmutes into the gold of reality, <br>where we sculpt dreams into digital <br>monuments of inspiration.</p>
+                            </div>
+                        </div>
 
                         <div class="invisible">
                         <div class="new">
@@ -1099,9 +1126,92 @@
 
 
         </div>
+
+
+        <div class="footer-2">
+
+            <div class="foot-img">
+                <img src="./Images/StockBook logo.svg" alt="">
+            </div>
+
+            <div class="flex">
+                <div class="second-foot">
+                    <div class="pro-footer">
+                        <h1>Product</h1>
+                    </div>
+                    
+                    
+    
+                     <div class="pushin">
+                        <div class="first-p">
+                            <p><a href="#">Inventory Management</a></p>
+                            <img src="./Images/arrow-up-01.svg" alt="">
+                        </div>
+                        <div class="first-class">
+                        <div class="second-p">
+                            <p><a href="#">Single Store</a></p>
+                        </div>
+        
+                        <div class="second-p">
+                            <p><a href="#">Multiple Store</a></p>
+                        </div>
+                    </div>
+    
+                    
+    
+                     </div>
+                     <div class="second-p" id="sp">
+                        <p><a href="#">Invoice Generator</a></p>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="third-foot">
+                    <div class="pro-footer">
+                        <h1>Company</h1>
+                    </div>
+    
+                    <div class="tripple">
+                        <p><a href="#">About Us</a></p>
+                        <p><a href="#">Work With Us </a></p>
+                        <p><a href="">Pricing</a></p>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="fourth-foot">
+                <div class="pro-footer">
+                    <h1>Contact</h1>
+                </div>
+
+                <div class="tripple">
+                    <p><a href="#">+234 (813) 654-90-28</a></p>
+                    <p><a href="#">theayomidesaka@gmail.com</a></p>
+                    <p><a href="">Help Center</a></p>
+                </div>
+
+                <div class="social-media">
+                    <a href="#"><img src="./Images/face book.svg" alt=""></a>
+                    <a href="#"><img src="./Images/twitter.svg" alt=""></a>
+                    <a href="#"><img src="./Images/twitter (1).svg" alt=""></a>
+                    <a href="#"><img src="./Images/youtub.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="under-p">
+                <p>© 2024 — StockBook Innovations. All Rights Reserved</p>
+            </div>
+
+
+
+        </div>
     </footer>
 
     <script src="script.js " ></script>
+    <script src="slider.js" ></script>
+    <script src="nav.js " ></script>
+    <script src="popup.js" ></script>
     <script src="swiper-bundle.min.js"></script>
 </body>
 </html>
