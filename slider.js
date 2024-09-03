@@ -10,15 +10,23 @@ function showSlide(index) {
 }
 
 prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 3 : slides.length - 3;
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
     showSlide(currentIndex);
 });
 
 nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex < slides.length - 3) ? currentIndex + 3 : 0;
+    currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
     showSlide(currentIndex);
 });
 
 window.addEventListener('resize', () => {
     showSlide(currentIndex);
 });
+
+
+window.addEventListener('resize', adjustSlides);
+
+// Initialize the slider
+adjustSlides();
+
+
