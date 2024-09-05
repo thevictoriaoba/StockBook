@@ -12,6 +12,7 @@
     background-color: rgba(10, 27, 20, 1);
     height: auto;
     width: 100%;
+    margin: 0;
 }
 
 
@@ -2349,7 +2350,10 @@ padding: 60px 0 80px 0;
 
 @media screen and (max-width: 480px) {
 
-
+.hero-section {
+    margin: 0;
+    width: 100%;
+}
     .header {
         background-color: rgba(10, 27, 20, 1);
         height: auto;
@@ -2486,6 +2490,7 @@ padding: 60px 0 80px 0;
      .sec-dash {
         display: flex;
         margin: 20px 1rem 0 1rem;
+       
      }
     
 
@@ -2493,13 +2498,20 @@ padding: 60px 0 80px 0;
 .dash-sec1 {
     background-color: rgba(22, 60, 44, 1);
 height:  (668.56px);
-width: Fixed (228.47px);
+width: 35%;
 padding: 48.96px 15px 26.11px 15px;
 gap: 0px;
 border-top-left-radius: 20px;
 justify-content: space-between;
 opacity: 0px;
 
+}
+
+
+.dash-sec2 {
+    background-color: rgba(245, 250, 246, 1);
+    border-top-right-radius: 20px;
+    width: 65%;
 }
 
      .dashboard-logo img {
@@ -2564,6 +2576,7 @@ opacity: 0px;
         padding: 20px 10px 10px 10px;
         
     }
+   
     
     .asses p {
     font-size: 7px;
@@ -2600,7 +2613,7 @@ opacity: 0px;
     font-weight: 700;
     line-height: 10px;
     text-align: left;
-    
+    display: none;
     }
     
     .paulfeng p {
@@ -2609,7 +2622,11 @@ opacity: 0px;
     line-height: 15px;
     text-align: left;
     color: rgba(86, 86, 86, 1);
-    
+    display: none;
+    }
+
+    .paulfeng p span {
+        display: none;
     }
     
     
@@ -2666,7 +2683,7 @@ opacity: 0px;
     
     .over-card {
    
-        width: 48%;
+        width: 47.5%;
     height:  147.34px;
     padding: 13.06px 19.58px 13.06px 13.06px;
     gap: 13.06px;
@@ -2680,9 +2697,9 @@ opacity: 0px;
         width: 20px;
     }
     
-    .over-p {
+    .over-p p{
        color: rgba(32, 34, 36, 1);
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 500;
     line-height: 13.83px;
     text-align: left;
@@ -2690,15 +2707,18 @@ opacity: 0px;
     
     }
     
-    .over-h1{
+    .over-h1 h1{
         color: rgba(32, 34, 36, 1);
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 23.7px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 10px;
     letter-spacing: 0.8159722089767456px;
     text-align: left;
-    padding-top: 10px;
+    padding-top: 0px;
     
+    }
+    .icon- img {
+        width: 11px;
     }
     
     .over-icon {
@@ -2718,14 +2738,15 @@ opacity: 0px;
     
     .over-icon p span {
         color: rgba(0, 182, 155, 1);
+        font-size: 8px;
     }
     
     
     .sales {
         width:93%;
-    height: 130px;
+    height: 100px;
     gap: 0px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     opacity: 0px;
         margin: 0 10px 0 10px;
         background-color : rgba(255, 255, 255, 1);
@@ -2771,9 +2792,11 @@ opacity: 0px;
     padding: 3px 3px;
     border: none;
     border-radius: 3px;
+   
     }
     
     .select2 form #filter {
+        display: none;
         color: rgba(255, 255, 255, 1);
     opacity: 0px;
         padding: 3px 3px;
@@ -2783,21 +2806,22 @@ opacity: 0px;
     }
 
     .sales-img img {
-        width: 250px;
-       
+        max-width: 210px;
+       padding-bottom: 20px;
     }
     
     
     
     .section-one {
         background-color: rgba(245, 255, 253, 1);
+        margin: 0 0rem 0 0rem;
     }
     
     .wether {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 50px 1rem 20px 1rem;
+        margin: 0px 0rem 20px 0rem;
     }
     
     .one-h1, .mul-h1 {
@@ -2807,7 +2831,7 @@ opacity: 0px;
 
     .one-h1 h1, .mul-h1 h1{
         color: rgba(10, 27, 20, 1);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 54px;
     
@@ -2823,7 +2847,7 @@ opacity: 0px;
      .mul-h1 h1{
         color: rgba(10, 27, 20, 1);
         
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 54px;
         text-align: left;
@@ -2834,7 +2858,7 @@ opacity: 0px;
     .one-h1 p, .mul-p p  {
         padding-top: 20px;
        color: rgba(10, 27, 20, 1);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
@@ -2844,7 +2868,7 @@ opacity: 0px;
      .mul-p p  {
         padding-top: 20px;
        color: rgba(10, 27, 20, 1);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
@@ -2854,14 +2878,14 @@ opacity: 0px;
     .nnayi{
         display: flex;
         flex-wrap: wrap;
-        gap: 5rem;
+        gap: 3rem;
         justify-content: space-between;
-        margin: 30px 1rem 30px 1rem;
+        margin: 30px 1rem 0px 1rem;
     }
     
     .products {
         background-color: rgba(255, 255, 255, 1);
-        width: 350px;
+        width: 300px;
     height: 190px;
     gap: 0px;
     border-radius: 20px;
@@ -2890,7 +2914,7 @@ opacity: 0px;
     .invisible {
         position: relative;
         background-color: rgba(220, 248, 241, 1);
-        width: 400px;
+        width: 100%;
     height: 523px;
     gap: 0px;
     border-radius: 20px;
@@ -2901,7 +2925,7 @@ opacity: 0px;
 
     .new {
         position: absolute;
-        width: 200px;
+        width: 157px;
     height: 73.32px;
     top: 86px;
     left: 202px;
@@ -2917,7 +2941,7 @@ opacity: 0px;
     
     .new h1 {
         color: rgba(10, 27, 20, 1);
-    font-size: 18.8px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 22.75px;
     text-align: left;
@@ -2927,7 +2951,7 @@ opacity: 0px;
     
     .new p {
         color:  rgba(105, 105, 116, 1);
-    font-size: 11.28px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 13.65px;
     letter-spacing: 0.08057143539190292px;
@@ -2938,27 +2962,148 @@ opacity: 0px;
 
     .section-two {
         background-color: rgba(10, 27, 20, 1);
-        height: 2350px;
+        height: 2450px;
     } 
 .secc-two {
     background-color: rgba(220, 248, 241, 1);
-    width: 370px;
+    width: 340px;
 height: 491px;
 gap: 0px;
 border-radius: 17.51px ;
 opacity: 0px;
-padding: 40px 20px 40px 10px;
+padding: 30px 20px 10px 20px;
 
 }
 
 .imz {
-    width: 150px;
+    width: 125px;
+}
+
+.twenty {
+    width: 315px;
+height: 337.37px;
+top: 144px;
+left: 48px;
+gap: 0px;
+opacity: 0px;
+margin-top: 70px;
+background-color: rgba(255, 255, 255, 1);
+border-radius: 20px;
+
+
+}
+
+
+.seven {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 10px 10px;
+}
+
+.teen p{
+    color: rgba(23, 23, 37, 1);
+font-size: 18.61px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0.11633333563804626px;
+text-align: left;
+
+}
+
+.loc {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px 0 10px;
+    
+}
+
+.alaba {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+.branch p {
+    color: rgba(68, 68, 79, 1);
+font-size: 14px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0.11633333563804626px;
+text-align: left;
+
+}
+
+.kay-p p {
+    color: rgba(68, 68, 79, 1);
+font-size: 14px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0.11633333563804626px;
+text-align: left;
+
+}
+
+#alaba{
+    padding-right: 20px;
+}
+
+.circle-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.blue {
+    border-radius: 100px;
+    width: 11.63px;
+height: 13.96px;
+top: 6.98px;
+gap: 0px;
+opacity: 0px;
+background-color: rgba(0, 98, 255, 1);
+
+}
+
+.orange {
+    background-color:  rgba(255, 151, 74, 1);
+    border-radius: 100px;
+    width: 11.63px;
+height: 13.96px;
+top: 6.98px;
+gap: 0px;
+opacity: 0px;
+}
+
+.yellow {
+    border-radius: 100px;
+    width: 11.63px;
+height: 13.96px;
+top: 6.98px;
+gap: 0px;
+opacity: 0px;
+background-color: rgba(255, 197, 66, 1);
+}
+
+.green {
+    border-radius: 100px;
+    width: 11.63px;
+height: 13.96px;
+top: 6.98px;
+gap: 0px;
+opacity: 0px;
+background-color: rgba(61, 213, 152, 1);
 }
 
 
 
+
 .performance-img img {
-    width: 370px;
+    width: 330px;
+    border-bottom-right-radius: 20px;
 }
 
 
@@ -2967,52 +3112,52 @@ padding: 40px 20px 40px 10px;
 }
 
 .store-sec {
-    width: 400px;
+    width: 360px;
 height: 865px;
 gap: 0px;
 border-radius: 20px ;
 opacity: 0px;
     background-color: rgba(17, 45, 33, 0.5);
-    margin-top: 50px;
+    margin: 50px 1rem 0 1rem;
 }
 
 .support {
-    width: 400px;
-height: 200px;
-padding: 40px 44px 30px 44px;
+    width: 355px;
+height: 230px;
+padding: 30px 44px 50px 34px;
 gap: 0px;
 border-radius: 20px ;
 opacity: 0px;
 background-color: rgba(17, 45, 33, 0.5);
-margin: 10px 0 0px 0;
+margin: 10px 1rem 30px 0rem;
 }
 
 .supportt {
-    width: 400px;
-height: 200px;
-padding: 50px 44px 50px 44px;
+    width: 355px;
+height: 210px;
+padding: 30px 44px 50px 34px;
 gap: 0px;
 border-radius: 20px ;
 opacity: 0px;
 background-color: rgba(17, 45, 33, 0.5);
-margin-top: 250px;
-margin-right: 0px;
+margin: 300px 1rem 0 1rem;
+
 }
 
 .feng-img img {
-    width: 400px;
+    width: 350px;
     padding-bottom: 70px;
     border-bottom-right-radius: 20px;
 }
 
 .reciept {
-    width: 400px;
+    width: 355px;
 height:810px;
 gap: 0px;
 border-radius: 20px ;
 opacity: 0px;
     background-color: rgba(17, 45, 33, 0.5);
-    margin-top: 50px;
+    margin: 50px 1rem 0 1rem;
     
 }
 
@@ -3020,13 +3165,13 @@ opacity: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 30px 1rem 30px 1rem;
+    margin: 30px 0rem 30px 0rem;
    
 }
 
 .sup h1, .supp h1 {
     color: rgba(255, 255, 255, 1);
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 40px;
     text-align: left;
@@ -3036,7 +3181,7 @@ opacity: 0px;
 
 .sup-p p{
     color: rgba(255, 255, 255, 1);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 34px;
     text-align: left;
@@ -3045,7 +3190,7 @@ opacity: 0px;
 
 .reciept h1 {
     color: rgba(255, 255, 255, 1);
-    font-size: 28px;
+    font-size: 21px;
     font-weight: 700;
     line-height: 47.88px;
     text-align: left;
@@ -3055,7 +3200,7 @@ opacity: 0px;
 
 .reciept p{
     color: rgba(255, 255, 255, 1);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 34px;
     text-align: left;
@@ -3077,7 +3222,7 @@ border: 2px solid rgba(255, 255, 255, 1);
 opacity: 0px;
 rotate:0;
 background-color: rgba(17, 45, 33, 0.5);
-font-size: 18px;
+font-size: 14px;
 font-weight: 400;
 line-height: 24.2px;
 text-align: center;
@@ -3085,7 +3230,7 @@ color: rgba(255, 255, 255, 1);
 }
 
 .rec-btn2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24.2px;
     text-align: center;    
@@ -3098,6 +3243,30 @@ color: rgba(255, 255, 255, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
     }
+
+     .first-row h1 {
+        color: rgba(255, 255, 255, 1);
+         font-size: 27px;
+         font-weight: 700;
+         line-height: 47.88px;
+         text-align: left;
+         padding: 10px 0 20px 0;
+     }
+     
+     
+     .first-row p {
+         color: rgba(255, 255, 255, 1);
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 34px;
+     text-align: left;
+     padding-bottom: 30px;
+     
+     }
+     
+     .first-row h1, .first-row p {
+         text-align: center;
+     }
 
 
     .carousel-container {
@@ -3221,7 +3390,7 @@ color: rgba(255, 255, 255, 1);
  
 
 .ready {
-    width: 400px;
+    width: 355px;
 height: 400px;
 top: 6320px;
 left: 0px;
@@ -3234,6 +3403,12 @@ background-repeat: no-repeat;
 background-size: cover;
 margin: 0 1rem 0 1rem;
 
+}
+
+.snow {
+    background-color: rgba(10, 27, 20, 1);
+    height: 400px;
+    width: 100%;
 }
 
 
