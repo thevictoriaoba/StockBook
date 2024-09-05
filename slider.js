@@ -26,7 +26,5 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('resize', adjustSlides);
 
-// Initialize the slider
-adjustSlides();
 
 
